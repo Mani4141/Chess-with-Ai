@@ -3,6 +3,7 @@
 #include "BitHolder.h"
 #include "Turn.h"
 #include "../Application.h"
+#include <cmath>
 
 Game::Game()
 {

@@ -61,8 +61,7 @@ bool Checkers::canBitMoveFrom(Bit &bit, BitHolder &src) {
     if (_mustContinueJumping && &src != _jumpingPiece) return false;
 
     ChessSquare* square = static_cast<ChessSquare*>(&src);
-    int x = square->getColumn();
-    int y = square->getRow();
+    (void)square;  // Mark as intentionally unused for now
 
     // Must jump if available
     if (hasJumpAvailable(bit.getOwner())) {
@@ -124,6 +123,7 @@ void Checkers::bitMovedFromTo(Bit &bit, BitHolder &src, BitHolder &dst) {
     int srcX = srcSquare->getColumn();
     int srcY = srcSquare->getRow();
     int dstX = dstSquare->getColumn();
+    (void)dstX;  // Mark as intentionally unused for now
     int dstY = dstSquare->getRow();
 
     // Check for jump

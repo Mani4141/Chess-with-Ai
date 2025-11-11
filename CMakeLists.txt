@@ -81,6 +81,7 @@ elseif(WINDOWS)
         user32.lib 
         gdi32.lib 
         winmm.lib
+        dwmapi.lib
     )
 endif()
 

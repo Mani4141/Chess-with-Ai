@@ -278,7 +278,7 @@ void Othello::setStateString(const std::string &s) {
 
     int index = 0;
     _grid->forEachSquare([&](ChessSquare* square, int x, int y) {
-        if (index < s.length()) {
+        if (index < static_cast<int>(s.length())) {
             char pieceType = s[index++];
             square->destroyBit();
 

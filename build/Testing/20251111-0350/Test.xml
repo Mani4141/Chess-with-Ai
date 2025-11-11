@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20251111-0350-Experimental"
+	Name="Mani4141"
+	Generator="ctest-4.1.2"
+	CompilerName="C:/msys64/ucrt64/bin/g++.exe"
+	CompilerVersion="14.2.0"
+	OSName="Windows"
+	Hostname="Mani4141"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="7"
+	ModelName=""
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="21061"
+	TotalPhysicalMemory="16197"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2500"
+	>
+	<Testing>
+		<StartDateTime>Nov 10 20:29 Pacific Standard Time</StartDateTime>
+		<StartTestTime>1762835360</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 10 20:29 Pacific Standard Time</EndDateTime>
+		<EndTestTime>1762835360</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -1,5 +1,10 @@
 #include "Grid.h"
 
+#include <algorithm>
+#include <vector>
+#include <functional>
+#include <unordered_map>
+#include <string>
 Grid::Grid(int width, int height) : _width(width), _height(height)
 {
     // Initialize 2D vectors
@@ -171,22 +176,16 @@ void Grid::forEachEnabledSquare(std::function<void(ChessSquare*, int x, int y)> 
 }
 
 // Initialize squares
+void Grid::initializeChessSquares(float squareSize, const char* spriteName)
+{
+    initializeSquares(squareSize, spriteName);
+}
+
 void Grid::initializeSquares(float squareSize, const char* spriteName)
 {
     for (int y = 0; y < _height; y++) {
         for (int x = 0; x < _width; x++) {
             initializeSquare(x, y, squareSize, spriteName);
-        }
-    }
-}
-
-// chess board starts at bottom a1 = 0,0
-void Grid::initializeChessSquares(float squareSize, const char* spriteName)
-{
-    for (int y = 0; y < _height; y++) {
-        for (int x = 0; x < _width; x++) {
-            ImVec2 position(squareSize * x + squareSize/2, squareSize * (7-y) + squareSize/2);
-            _squares[y][x]->initHolder(position, spriteName, x, y);
         }
     }
 }
@@ -228,6 +227,7 @@ void Grid::setStateString(const std::string& state)
         for (int x = 0; x < _width && index < state.length(); x++) {
             if (_enabled[y][x]) {
                 char pieceChar = state[index++];
+                (void)pieceChar;  // Mark as intentionally unused
 
                 // Clear existing piece
                 _squares[y][x]->destroyBit();
