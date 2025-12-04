@@ -922,6 +922,7 @@ CMakeFiles/demo.dir/classes/Chess.cpp.obj: C:/Users/manvi/CMPM\ 123/chess-base/c
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Entity.h \
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Game.h \
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Grid.h \
+  C:/Users/manvi/CMPM\ 123/chess-base/classes/MagicBitBoard.h \
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Player.h \
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Sprite.h \
   C:/Users/manvi/CMPM\ 123/chess-base/classes/Turn.h
@@ -4845,6 +4846,8 @@ C:/Users/manvi/CMPM\ 123/chess-base/classes/Grid.cpp:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/memory_resource.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/move.h:
+
+C:/Users/manvi/CMPM\ 123/chess-base/classes/MagicBitBoard.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
 

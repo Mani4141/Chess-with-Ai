@@ -927,6 +927,7 @@ CMakeFiles/demo.dir/classes/Chess.cpp.obj
  C:/Users/manvi/CMPM 123/chess-base/classes/Entity.h
  C:/Users/manvi/CMPM 123/chess-base/classes/Game.h
  C:/Users/manvi/CMPM 123/chess-base/classes/Grid.h
+ C:/Users/manvi/CMPM 123/chess-base/classes/MagicBitBoard.h
  C:/Users/manvi/CMPM 123/chess-base/classes/Player.h
  C:/Users/manvi/CMPM 123/chess-base/classes/Sprite.h
  C:/Users/manvi/CMPM 123/chess-base/classes/Turn.h
