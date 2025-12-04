@@ -2,6 +2,8 @@
 #include "Bitboard.h"
 #include "Game.h"
 #include "Grid.h"
+#include <vector>
+#include <string>
 
 constexpr int pieceSize = 80;
 
@@ -27,6 +29,9 @@ public:
     bool canBitMoveFrom(Bit &bit, BitHolder &src) override;
     bool canBitMoveFromTo(Bit &bit, BitHolder &src, BitHolder &dst) override;
     bool actionForEmptyHolder(BitHolder &holder) override;
+
+    bool gameHasAI() override { return true; }
+    void updateAI() override;
 
     void stopGame() override;
 
@@ -57,6 +62,7 @@ private:
         bool isWhite;
         PieceType type;
     };
+
     uint64_t getOccupancy() const;
     uint64_t getColorOccupancy(int player) const;
     Bit* PieceForPlayer(const int playerNumber, ChessPiece piece);
@@ -70,4 +76,15 @@ private:
     int boardIndex(int x, int y) const;
 
     Grid* _grid;
+
+    // === AI helpers ===
+    std::vector<BitMove> generateAllMoves(const std::string& state, int playerColor);
+    int evaluateBoard(const std::string& state);
+    int negamax(std::string& state, int depth, int alpha, int beta, int playerColor);
+
+    // For debugging: node count during a search
+    int _countMoves = 0;
+
+    // Root move list (current board)
+    std::vector<BitMove> _moves;
 };
