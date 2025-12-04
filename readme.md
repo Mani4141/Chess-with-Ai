@@ -52,7 +52,7 @@ Centralization bonus for knights & bishops
 Slight incentives toward active piece usage
 Removes early-game rook shuffling
 
-♟ Move Generation
+Move Generation
 
 Fast, branchless bitboard-based movement:
 
@@ -81,16 +81,13 @@ Rarely falls into simple tactics
 I am ~1300 ELO on Chess.com rapid, and the AI has beaten me.
 It feels competitive and non-random — a real chess opponent (me).
 
-🛠 Performance Summary
-Build	Depth	Smooth?	Notes
-Release	5	✔✔	Fully meets rubric and feels like a good player
 
 Sample move counts:
 
 Moves checked: 694281 ... 9312166
 best score values displayed live in console
 
-🧩 Development Notes & Challenges
+Development Notes & Challenges
 Issue	Solution
 Wrong move list reused inside search	Generate moves fresh each recursion
 Scores originally favored Black positive	Reversed sign convention white = positive
